@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #EEEEEE;
+  --special-font: 'PT Serif', serif;
+  --text-color: #191919;
+  --normal-font: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+
+.container {
+  padding: 0px 20px;
+  margin: 0 auto;
+  max-width: 992px;
+  /* Set the maximum width for the container */
+}
+
+
+/* Media query for a minimum width of 576 pixels */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+input {
+  color: black !important;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.accordion-title>h2 {
+  font-weight: 700;
+}
+
+.accordion-header p {
+  font-weight: 600;
+}
+
+.hero-title {
+  font-weight: 700;
+}
+
+

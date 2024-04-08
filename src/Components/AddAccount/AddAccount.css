@@ -1,0 +1,186 @@
+#add-account {
+    background-color: #ff7d7d;
+    color: #fff;
+    position: relative;
+}
+
+#add-account .container {
+    padding: 40px 20px;
+}
+
+.add-account__title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img-wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#add-account .content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-account__button {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #777;
+    background-color: #ffffff;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s, box-shadow .3s;
+    color: #191919;
+    position: relative;
+}
+
+.add-account__button:hover {
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0 4px 8px #6d2e2e
+}
+
+.add-account__button::after {
+    content: "Add Account";
+    position: absolute;
+    font-family: "Manrope";
+    top: -30px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 13px;
+    display: none;
+}
+
+.add-account__button:hover::after {
+    opacity: 1;
+    pointer-events: auto;
+    top: -35px;
+}
+
+#add-account .add-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-account .add-icon i {
+    font-size: 20px;
+}
+
+#add-account .content-text {
+    margin-top: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.add-account__accounts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-height: 490px;
+    overflow: auto;
+}
+
+
+
+@media(min-width:400px) {
+    #add-account .content-text {
+        font-size: 16px;
+    }
+}
+
+
+@media(min-width:576px) {
+    .add-account__button::after {
+        display: block;
+    }
+
+    .content-text {
+        display: none;
+    }
+
+    .img-wrapper {
+        order: 1;
+    }
+
+    #add-account .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .add-account__button {
+        border-radius: 20px;
+    }
+}
+
+
+@media(min-width:768px) {
+    #add-account .content{
+        align-items: center;
+    }
+
+    .add-account__accounts{
+        max-height: 489px;
+    }
+
+    .content-text {
+        display: block;
+    }
+
+    #add-account .add-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    #add-account .add-icon i {
+        font-size: 24px;
+    }
+
+    #add-account .content-text {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .add-account__button::after {
+        display: none;
+    }
+
+    .add-account__button{
+        width: 50%;
+
+    }
+
+    .img-wrapper{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
